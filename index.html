@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Home Library</title>
+<meta name="description" content="My English and Tamil book collection">
+<meta name="theme-color" content="#2E5A4B">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Noto+Sans+Tamil:wght@400;500;600&family=Noto+Serif+Tamil:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap" id="app"><p class="status">Opening your library…</p></div>
+<div id="layer"></div>
+<div id="scanLayer"></div>
+<input type="file" accept="image/*" capture="environment" id="ownCam" class="vh" tabindex="-1" aria-hidden="true">
+<input type="file" accept="image/*" id="ownGal" class="vh" tabindex="-1" aria-hidden="true">
+<input type="file" accept="image/*" capture="environment" id="pageCam" class="vh" tabindex="-1" aria-hidden="true">
+<input type="file" accept="image/*" id="pageGal" class="vh" tabindex="-1" aria-hidden="true">
+<input type="file" accept="image/*" capture="environment" id="coverCam" class="vh" tabindex="-1" aria-hidden="true">
+<input type="file" accept="image/*" id="coverGal" class="vh" tabindex="-1" aria-hidden="true">
+<input type="file" accept="application/json,.json" id="importFile" class="vh" tabindex="-1" aria-hidden="true">
+<noscript><p style="padding:20px">Home Library needs JavaScript turned on.</p></noscript>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@zxing/library@0.21.3/umd/index.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
